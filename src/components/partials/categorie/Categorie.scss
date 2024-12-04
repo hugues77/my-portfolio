@@ -1,0 +1,20 @@
+.btn-categorie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  button {
+    padding: 12px 30px;
+    color: #1569d4;
+    // background: #6363f3;
+    border: 2px solid #1569d4;
+    margin-right: 30px;
+    border-radius: 9px;
+    // border: 0;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+  }
+}
