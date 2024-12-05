@@ -1,11 +1,25 @@
 .outils {
   background: #0b0b2d;
-  height: 200px;
+  height: 120px;
   color: #fff;
   display: flex;
   align-items: center;
 
   .outils-content {
     padding: 0px 80px;
+    .first-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .icon {
+        color: #fff;
+        font-size: 60px;
+        margin-left: 65px;
+      }
+      .icon:first-child {
+        margin-left: 0;
+      }
+    }
   }
 }

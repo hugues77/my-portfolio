@@ -78,9 +78,10 @@
         align-items: center;
         justify-content: center;
 
-        img {
-          width: 30px;
-          margin-right: 6px;
+        .icon {
+          color: #fff;
+          margin-right: 5px;
+          font-size: 18px;
         }
       }
       p {
