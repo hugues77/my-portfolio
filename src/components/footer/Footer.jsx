@@ -9,13 +9,13 @@ function Footer() {
         
         <div className="user-info">
             <img src={imgHugues} alt="" />
-            <span>© Hugues EYONG</span>
+            <span>© Hugues EYONG, Tous droits réservés.</span>
 
         </div>
         <div className="info-rx">
-            <FontAwesomeIcon icon={faLinkedinIn} className='icon' />
-            <FontAwesomeIcon icon={faGithub} className='icon' />
-            <FontAwesomeIcon icon={faWhatsapp} className='icon' />
+            <div className='icon'><FontAwesomeIcon icon={faLinkedinIn}  /></div>
+            <div className='icon'><FontAwesomeIcon icon={faGithub}  /></div>
+            <div className='icon'><FontAwesomeIcon icon={faWhatsapp}  /></div>
 
         </div>
       

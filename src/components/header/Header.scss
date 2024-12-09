@@ -39,7 +39,8 @@
       justify-content: space-between;
       flex-wrap: wrap;
 
-      button {
+      a {
+        position: relative;
         width: calc(50% - 5px);
         padding: 12px;
         border-radius: 8px;
@@ -47,16 +48,53 @@
         font-size: 18px;
         font-weight: 600;
         cursor: pointer;
+        z-index: 1;
+        overflow: hidden;
+        transition: all 0.5s ease;
+        text-align: center;
+
+        .icon {
+          margin-right: 5px;
+        }
       }
-      .voir a {
+      .voir {
+        background: #fff;
         color: #0b0b2d;
       }
-      .download {
+
+      a:nth-child(2) {
         background: none;
         color: #fff;
-        a {
-          color: #fff;
-        }
+      }
+
+      a::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        // background: #00abf0;
+        z-index: -1;
+        transition: all 0.5s ease;
+      }
+
+      a.voir::before {
+        background: #0b0b2d;
+      }
+      a.download::before {
+        background: #fff;
+      }
+
+      a.voir:hover {
+        color: #fff;
+      }
+      a.download:hover {
+        color: #0b0b2d;
+      }
+
+      a:hover::before {
+        width: 100%;
       }
     }
   }

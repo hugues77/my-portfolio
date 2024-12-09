@@ -17,12 +17,37 @@
     gap: 20px;
 
     .icon {
+      position: relative;
       font-size: 18px;
       color: #0b0b2d;
       border: 2px solid #0b0b2d;
       padding: 10px;
       border-radius: 50%;
       cursor: pointer;
+      overflow: hidden;
+      width: 40px;
+      height: 40px;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      transition: all 0.5s ease;
+    }
+    .icon::before {
+      content: "";
+      position: absolute;
+      background: #0b0b2d;
+      left: 0;
+      top: 0;
+      width: 0;
+      height: 100%;
+      z-index: -1;
+      transition: all 0.5s ease;
+    }
+    .icon:hover::before {
+      width: 100%;
+    }
+    .icon:hover {
+      color: #fff;
     }
   }
 }

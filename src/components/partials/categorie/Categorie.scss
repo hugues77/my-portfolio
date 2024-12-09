@@ -16,5 +16,27 @@
     font-size: 17px;
     font-weight: 400;
     font-family: "Roboto", sans-serif;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.5s ease;
+  }
+
+  button::before {
+    content: "";
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #1569d4;
+    position: absolute;
+    z-index: -1;
+    transition: all 0.5s ease;
+  }
+  button:hover {
+    color: #fff;
+  }
+  button:hover::before {
+    width: 100%;
   }
 }

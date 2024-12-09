@@ -1,4 +1,5 @@
 .outils {
+  width: 100%;
   background: #0b0b2d;
   height: 120px;
   color: #fff;
@@ -15,7 +16,8 @@
       .icon {
         color: #fff;
         font-size: 60px;
-        margin-left: 65px;
+        // margin-left: 65px;
+        margin-left: 40px;
       }
       .icon:first-child {
         margin-left: 0;

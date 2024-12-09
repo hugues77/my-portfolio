@@ -1,0 +1,39 @@
+.card-btn {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  background: #0b0b2d;
+  border: 2px solid #0b0b2d;
+  padding: 12px 30px;
+  margin: 5% 25%;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  //   font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+  transition: all 0.5s ease;
+
+  .icon {
+    margin-right: 5px;
+    font-size: 17px;
+  }
+}
+.card-btn::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: #fff;
+  transition: all 0.5s ease;
+}
+.card-btn:hover::before {
+  width: 100%;
+}
+.card-btn:hover {
+  color: #0b0b2d;
+}
