@@ -4,6 +4,10 @@
 
   h2 {
     text-align: center;
+
+    @media screen and (max-width: 768px) {
+      font-size: 17px;
+    }
   }
   .line {
     position: relative;
@@ -12,5 +16,10 @@
     background: #f2c43d;
     margin-top: 10px;
     left: 40%;
+
+    @media screen and (max-width: 768px) {
+      left: 40%;
+      width: 50px;
+    }
   }
 }

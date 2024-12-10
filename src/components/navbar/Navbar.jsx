@@ -10,7 +10,7 @@ useEffect(() => {
   window.addEventListener('scroll', () =>{
     window.scrollY > 100 ? setMenu(true) : setMenu(false)
   })
-},[])
+},[]) 
 
 
   return (

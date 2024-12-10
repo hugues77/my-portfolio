@@ -17,16 +17,14 @@ function Card() {
                 </div>
                 <div className="card-text">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sit animi id repellendus. Voluptatibus dolorem deleniti sit, totam ad adipisci sequi laudantium incidunt tempore dolores ipsa nemo quod architecto asperiores!</p>
-                    <div className="categ">SEO</div>
                 </div>
             </div>
             <div className="card-content">
                 <div className="card-header">
                     <img src={cardSecours} alt="image application réalisée" />
                 </div>
-                <div className="card-text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sit animi id repellendus. Voluptatibus dolorem deleniti sit, totam ad adipisci sequi laudantium incidunt tempore dolores ipsa nemo quod architecto asperiores!</p>
-                    <div className="categ">SEO</div>
+                <div className="card-text"> 
+                    <p>Lorem ipsum dolor hshgdhsgdhhshGQGDmdqgdGGfkhbfeizegiazgzgeizgeiuazgege handy sit amet consectetur adipisicing elit. Quasi sit animi id repellendus. Voluptatibus dolorem deleniti sit, totam ad adipisci sequi laudantium incidunt tempore dolores ipsa nemo quod architecto asperiores!</p>
                 </div>
             </div>
             <div className="card-content">

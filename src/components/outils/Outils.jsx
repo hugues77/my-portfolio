@@ -10,7 +10,7 @@ function Outils() {
   return (
     <div className='outils'> 
       <div className="outils-content">
-          <div className="first-group">
+          <div className="first-group"> 
             <FontAwesomeIcon icon={faReact} className='icon' />
             <FontAwesomeIcon icon={faPhp} className='icon' />
             <FontAwesomeIcon icon={faHtml5} className='icon' />

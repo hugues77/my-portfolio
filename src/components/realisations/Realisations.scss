@@ -15,9 +15,22 @@
   overflow: hidden;
   transition: all 0.5s ease;
 
+  @media screen and (max-width: 768px) {
+    padding: 10px 20px;
+    font-size: 14px;
+    margin: 5% 10%;
+  }
+  @media screen and (max-width: 576px) {
+    margin: 5% 0;
+  }
+
   .icon {
     margin-right: 5px;
     font-size: 17px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
   }
 }
 .card-btn::before {

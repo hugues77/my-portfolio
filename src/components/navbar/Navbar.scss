@@ -12,6 +12,14 @@ nav {
     background: #0b0b2d;
   }
 
+  //media pour tablette
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+
   .logo {
     color: #fff;
     // font-family: "Oooh Baby", sans-serif;

@@ -6,14 +6,25 @@
     display: flex;
     // flex-wrap: wrap;
     gap: 20px;
+    @media screen and (max-width: 576px) {
+      flex-direction: column;
+    }
 
     .column {
       width: calc(50% - 10px);
       text-align: justify;
+
+      @media screen and (max-width: 576px) {
+        width: 100%;
+      }
     }
     .about-left {
       .bar {
         margin-top: 20px;
+
+        @media screen and (max-width: 768px) {
+          margin-top: 27px;
+        }
 
         .info {
           display: flex;
@@ -24,6 +35,10 @@
             font-size: 18px;
             font-weight: 500;
             font-family: "Roboto", sans-serif;
+
+            @media screen and (max-width: 768px) {
+              font-size: 14px;
+            }
           }
         }
         .line {
@@ -83,9 +98,18 @@
         z-index: 1;
         transition: all 0.5s ease;
 
+        @media screen and (max-width: 768px) {
+          padding: 7px 10px;
+          font-size: 14px;
+        }
+
         .icon {
           margin-right: 5px;
           font-size: 18px;
+
+          @media screen and (max-width: 768px) {
+            font-size: 14px;
+          }
         }
       }
       .p_linkedin::before {
@@ -106,6 +130,10 @@
       p {
         margin-bottom: 5px;
         line-height: 20px;
+
+        @media screen and (max-width: 768px) {
+          font-size: 14px;
+        }
       }
       a {
         color: #fff;

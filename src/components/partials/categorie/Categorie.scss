@@ -1,6 +1,7 @@
 .btn-categorie {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 30px;
 
@@ -20,6 +21,15 @@
     overflow: hidden;
     z-index: 1;
     transition: all 0.5s ease;
+
+    @media screen and (max-width: 768px) {
+      padding: 8px 20px;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    @media screen and (max-width: 576px) {
+      margin-top: 10px;
+    }
   }
 
   button::before {
