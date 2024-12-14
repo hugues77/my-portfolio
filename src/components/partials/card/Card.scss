@@ -11,16 +11,105 @@
 
     @media screen and (max-width: 768px) {
       width: calc(50% - 20px);
-      border-radius: 6px;
+      // border-radius: 6px;
     }
     @media screen and (max-width: 576px) {
       width: 100%;
     }
     .card-header {
+      position: relative;
       img {
         width: 100%;
+        height: 250px;
         border-radius: 10px 10px 0 0;
       }
+      //caption
+      .caption {
+        position: absolute;
+        background: rgba(21, 105, 212, 0.4);
+        color: #fff;
+        left: 0;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 10px 10px 0 0;
+        opacity: 0;
+        cursor: pointer;
+        padding-top: 70%;
+        transition: 0.4s ease;
+
+        .icon_caption {
+          margin-bottom: 30px;
+          font-size: 45px;
+        }
+        .buttons {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          gap: 20px;
+
+          a,
+          button {
+            position: relative;
+            text-decoration: none;
+            color: #0b0b2d;
+            font-size: 16px;
+            font-weight: 400;
+            background: #fff;
+            padding: 10px 40px;
+            border-radius: 8px;
+            z-index: 1;
+            transition: 0.5s ease;
+
+            .icon {
+              margin-right: 5px;
+            }
+          }
+          a::before,
+          button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 8px;
+            height: 100%;
+            width: 0;
+            background: #0b0b2d;
+            // border: 1px solid #0b0b2d;
+            z-index: -1;
+            transition: all 0.5s ease;
+          }
+          a:nth-child(1) {
+            background: #0b0b2d;
+            color: #fff;
+          }
+          a:nth-child(1)::before {
+            background: #fff;
+          }
+          button:hover::before,
+          a:hover::before {
+            width: 100%;
+          }
+          button:hover {
+            color: #fff;
+            font-weight: 600;
+            cursor: pointer;
+          }
+          a:nth-child(1):hover {
+            color: #0b0b2d;
+            border: 1px solid #0b0b2d;
+          }
+        }
+      }
+    }
+    .card-header:hover .caption {
+      opacity: 1;
+      padding-top: 0;
     }
     .card-text {
       margin-bottom: 10px;
@@ -36,6 +125,196 @@
           font-size: 14px;
         }
       }
+      .categ {
+        background: #0b0b2d;
+        padding: 5px 15px;
+        border-radius: 6px;
+        color: #fff;
+        font-size: 17px;
+        font-weight: 500;
+        text-align: center;
+        width: 50%;
+        float: right;
+        margin-bottom: 10px;
+
+        @media screen and (max-width: 768px) {
+          font-size: 14px;
+        }
+        @media screen and (max-width: 576px) {
+          font-size: 14px;
+          width: 100%;
+          text-align: right;
+        }
+      }
     }
+    //modal
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      // background: rgba(21, 105, 212, 0.8);
+      background: rgba(11, 11, 45, 0.3);
+      // background: rgba(0, 0, 0, 0.8);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // display: none;
+
+      .modal-content {
+        width: 1000px;
+        height: 90%;
+        overflow: auto;
+        background: #fff;
+        color: #000;
+        padding: 20px;
+        border-radius: 8px;
+
+        .modal-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          h2 {
+            margin-bottom: 5px;
+          }
+
+          .icon {
+            font-size: 22px;
+            font-weight: 600;
+            cursor: pointer;
+          }
+        }
+        .modal-body {
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        hr {
+          padding: 0;
+          width: 100%;
+          margin-bottom: 20px;
+          border-bottom: 2px solid #0b0b2d;
+        }
+      }
+    }
+  }
+}
+
+//button categ
+
+//scss du button voir plus
+.card-btn {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  background: #0b0b2d;
+  border: 2px solid #0b0b2d;
+  padding: 12px 30px;
+  margin: 5% 25%;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  //   font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+  transition: all 0.5s ease;
+
+  @media screen and (max-width: 768px) {
+    padding: 10px 20px;
+    font-size: 14px;
+    margin: 5% 10%;
+  }
+  @media screen and (max-width: 576px) {
+    margin: 5% 0;
+  }
+
+  .icon {
+    margin-right: 5px;
+    font-size: 17px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+}
+.card-btn::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: #fff;
+  transition: all 0.5s ease;
+}
+.card-btn:hover::before {
+  width: 100%;
+}
+.card-btn:hover {
+  color: #0b0b2d;
+}
+
+//btn categorie
+.btn-categorie {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  button {
+    padding: 12px 30px;
+    color: #1569d4;
+    // background: #6363f3;
+    border: 2px solid #1569d4;
+    margin-right: 30px;
+    border-radius: 9px;
+    // border: 0;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.5s ease;
+
+    &.active {
+      background: #1569d4;
+      color: #fff;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 8px 20px;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    @media screen and (max-width: 576px) {
+      margin-top: 10px;
+    }
+  }
+
+  button::before {
+    content: "";
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #1569d4;
+    position: absolute;
+    z-index: -1;
+    transition: all 0.5s ease;
+  }
+  button:hover {
+    color: #fff;
+  }
+  button:hover::before {
+    width: 100%;
   }
 }

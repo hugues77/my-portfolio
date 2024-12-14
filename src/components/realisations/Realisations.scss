@@ -1,3 +1,4 @@
+//scss du button voir plus
 .card-btn {
   position: relative;
   text-align: center;
@@ -49,4 +50,58 @@
 }
 .card-btn:hover {
   color: #0b0b2d;
+}
+
+//btn categorie
+.btn-categorie {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  button {
+    padding: 12px 30px;
+    color: #1569d4;
+    // background: #6363f3;
+    border: 2px solid #1569d4;
+    margin-right: 30px;
+    border-radius: 9px;
+    // border: 0;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.5s ease;
+
+    @media screen and (max-width: 768px) {
+      padding: 8px 20px;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    @media screen and (max-width: 576px) {
+      margin-top: 10px;
+    }
+  }
+
+  button::before {
+    content: "";
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #1569d4;
+    position: absolute;
+    z-index: -1;
+    transition: all 0.5s ease;
+  }
+  button:hover {
+    color: #fff;
+  }
+  button:hover::before {
+    width: 100%;
+  }
 }

@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './Contact.scss'
-import { faEnvelope, faHome, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faGlobe, faHome, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 function Contact() {
   return (
@@ -8,6 +8,7 @@ function Contact() {
       <div className="contact-content">
         <div className="column contact-left">
             <p><FontAwesomeIcon icon={faHome} className='icon'/><a href="https://maps.app.goo.gl/Hjou9cXaoesVTtDP6" target='_blank'> 15 rue des framboises, 57050 Metz </a></p>
+            <p><FontAwesomeIcon icon={faGlobe} className='icon'/><a href="" > France </a></p>
             <p><FontAwesomeIcon icon={faPhone} className='icon'/><a href="tel:+33651294692">+33 6 51 29 46 92 </a></p>
             <p><FontAwesomeIcon icon={faEnvelope} className='icon'/><a href="mailto:hugues777@outlook.com">hugues777@outlook.com </a></p>
             {/* <p><FontAwesomeIcon icon={faCar} className='icon'/>Permis B + voiture</p> */}

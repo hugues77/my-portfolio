@@ -1,0 +1,65 @@
+[
+    {
+        "id":1,
+        "urlImage":"http://localhost:5173/src/assets/card/booki_projet_2.jpg",
+        "categ":"HTML & CSS",
+        "title": "site d'une agence de voyage Booki",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sit animi id repellendus. Voluptatibus dolorem deleniti sit, totam ad adipisci sequi laudantium incidunt tempore dolores ipsa nemo quod architecto asperiores!",
+        "urlGithub":"https://github.com/hugues77/booki",
+        "urlImagePreview":"http://localhost:5173/src/assets/card/preview/booki_projet_2.png"
+    },
+    {
+        "id":2,
+        "urlImage":"http://localhost:5173/src/assets/card/secours_projet_php.jpg",
+        "categ":"php",
+        "title": "site d'une association à metz avec gestion des membres ",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sit animi id repellendus. Voluptatibus dolorem deleniti sit, totam ad adipisci sequi laudantium incidunt tempore dolores ipsa nemo quod architecto asperiores!",
+        "urlGithub":"https://github.com/hugues77/secours_de_leternel",
+        "urlImagePreview":"http://localhost:5173/src/assets/card/preview/secours_projet_php.png"
+    },
+    {
+        "id":3,
+        "urlImage":"http://localhost:5173/src/assets/card/kasa_projet_5.jpg",
+        "categ":"react",
+        "title": "Projet de location immobilière kasa",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sit animi id repellendus. Voluptatibus dolorem deleniti sit, totam ad adipisci sequi laudantium incidunt tempore dolores ipsa nemo quod architecto asperiores!",
+        "urlGithub":"https://github.com/hugues77/Location-immo-avec-React",
+        "urlImagePreview":"http://localhost:5173/src/assets/card/preview/kasa_projet_5.png"
+    },
+    {
+        "id":4,
+        "urlImage":"http://localhost:5173/src/assets/card/portfolio_projet_8.jpg",
+        "categ":"react",
+        "title": "Projet portfolio de Hugues Eyong",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sit animi id repellendus. Voluptatibus dolorem deleniti sit, totam ad adipisci sequi laudantium incidunt tempore dolores ipsa nemo quod architecto asperiores!",
+        "urlGithub":"https://github.com/hugues77/my-portfolio",
+        "urlImagePreview":"http://localhost:5173/src/assets/card/preview/portfolio_projet_8.png"
+    },
+    {
+        "id":5,
+        "urlImage":"http://localhost:5173/src/assets/card/sophie_projet_3.jpg",
+        "categ":"javascript",
+        "title": "Création d'un site dynamique pour un architecte",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sit animi id repellendus. Voluptatibus dolorem deleniti sit, totam ad adipisci sequi laudantium incidunt tempore dolores ipsa nemo quod architecto asperiores!",
+        "urlGithub":"https://github.com/hugues77/Architecte-sophie-bluel",
+        "urlImagePreview":"http://localhost:5173/src/assets/card/preview/sophie_projet_3.png"
+    },
+    {
+        "id":6,
+        "urlImage":"http://localhost:5173/src/assets/card/nina_projet_4.jpg",
+        "categ":"seo",
+        "title": "Amélioration et  optimisation du site d'un photographe",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sit animi id repellendus. Voluptatibus dolorem deleniti sit, totam ad adipisci sequi laudantium incidunt tempore dolores ipsa nemo quod architecto asperiores!",
+        "urlGithub":"https://github.com/hugues77/projet4optimisation-seo",
+        "urlImagePreview":"http://localhost:5173/src/assets/card/preview/nina_projet_4.png"
+    },
+    {
+        "id":7,
+        "urlImage":"http://localhost:5173/src/assets/card/vGrimoire_projet_6.jpg",
+        "categ":"Nodejs",
+        "title": "Site de notation des livres",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sit animi id repellendus. Voluptatibus dolorem deleniti sit, totam ad adipisci sequi laudantium incidunt tempore dolores ipsa nemo quod architecto asperiores!",
+        "urlGithub":"https://github.com/hugues77/backend_notation_livres",
+        "urlImagePreview":"http://localhost:5173/src/assets/card/preview/vGrimoire_projet_6.png"
+    }
+]
