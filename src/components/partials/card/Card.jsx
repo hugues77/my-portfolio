@@ -3,10 +3,11 @@ import dataCard from '../../../data/Cards';
 import dataCateg from '../../../data/Categorie'
 import { useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEye } from '@fortawesome/free-regular-svg-icons'
+// import { faEye } from '@fortawesome/free-regular-svg-icons'
 import {  faClose, faCode, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 // import imgPreview from '../../../assets/card/preview/sophie_projet_3.png';
+import { motion } from "motion/react";
 
 
 function Card() {
@@ -15,11 +16,14 @@ function Card() {
 //state pour nombre des cards a afficher 
 // const [nCard, setnCard] = useState(3);
 
-const loadMore = () => {
-    setItems(dataCard)
-}
+// const loadMore = () => {
+//     setnCard(nCard + nCard);
+//     // setItems(dataCard);
+//     setItems(dataCard.slice(0, nCard))
+// }
 //state pour background filter categ
 const [activeButton, setActiveButton] = useState(false);
+
 
 // const exp = dataCard.filter((data) => data.categ.toLowerCase().includes('react'))
 // console.log(exp);
@@ -43,8 +47,14 @@ const modalButton = () =>{
 const [items, setItems] = useState(dataCard);
 
 const filterItems = (categ) =>{
-    const newItems = dataCard.filter((data) => data.categ.toLowerCase() === categ)
-    setItems(newItems);
+    if(categ === 'tous'){
+        setItems(dataCard);
+        
+    }else{
+        const newItems = dataCard.filter((data) => data.categ.toLowerCase() === categ)
+        setItems(newItems);
+    }
+    
 
     //change background button
     setActiveButton(categ);
@@ -55,7 +65,6 @@ const filterItems = (categ) =>{
         
         {/* les boutons pour categorie */}
         <div className='btn-categorie'>
-            <button className={activeButton ? '': 'active'} onClick={() => setItems(dataCard.slice(0, 3))}>Tous </button>
 
             {
                 dataCateg.map((cat) =>(
@@ -74,7 +83,13 @@ const filterItems = (categ) =>{
                 items.map((res) => (
                     
                    
-                    <div className="card-content" key={res.id} >
+                    <motion.div 
+                    layout
+                    initial={{opacity: 0, y:50}}
+                    animate={{opacity: 1, y:0}}
+                    exit={{ opacity: 0 }}
+                    transition={{duration: 0.4}}
+                    className="card-content" key={res.id} >
                         <div className="card-header">
                             <img src={res.urlImage} alt="" /> 
                             <div className="caption">
@@ -103,8 +118,8 @@ const filterItems = (categ) =>{
                                 
                         </div>
                         
-                        
-                    </div>
+
+                    </motion.div>
     
                 ))
                 
@@ -112,7 +127,7 @@ const filterItems = (categ) =>{
 
         </div>
 
-        {<div className="card-btn" onClick={() => loadMore()}><FontAwesomeIcon icon={faEye} className='icon' /> Voir plus</div>}
+        {/* {(nCard < 7) && <div className="card-btn" onClick={() => loadMore()}><FontAwesomeIcon icon={faEye} className='icon' /> Voir plus</div>} */}
        
 
     </div>

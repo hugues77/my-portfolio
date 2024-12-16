@@ -60,7 +60,7 @@
             color: #0b0b2d;
             font-size: 16px;
             font-weight: 400;
-            background: #fff;
+            // background: #fff;
             padding: 10px 40px;
             border-radius: 8px;
             z-index: 1;
@@ -84,11 +84,11 @@
             z-index: -1;
             transition: all 0.5s ease;
           }
-          a:nth-child(1) {
+          a {
             background: #0b0b2d;
             color: #fff;
           }
-          a:nth-child(1)::before {
+          a::before {
             background: #fff;
           }
           button:hover::before,
@@ -97,11 +97,12 @@
           }
           button:hover {
             color: #fff;
-            font-weight: 600;
+            font-weight: 500;
             cursor: pointer;
           }
-          a:nth-child(1):hover {
+          a:hover {
             color: #0b0b2d;
+            font-weight: 500;
             border: 1px solid #0b0b2d;
           }
         }
