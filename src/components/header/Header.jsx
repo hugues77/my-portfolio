@@ -18,7 +18,7 @@ const Header = () => {
         <div className="main">
           <h1>Bonjour !  Je suis Hugues EYONG</h1>
           <h2>Developpeur web <span>{text} <Cursor/></span></h2>
-          <p>Passionné du développement<span> web et ses technologies</span>. je suis en reconversion <span>professionnelle et à la recherche des nouvelles</span> opportunités pour <span> concilier mes acquis en frontend et backend </span> ayant déjà réaliser <span>des projets concrets en PHP, React, Javascript </span> et Nodejs(Express).</p>
+          <p>Passionné du développement<span> web et ses technologies</span>. je suis en reconversion <span>professionnelle et à la recherche des nouvelles</span> opportunités <span>pour  concilier mes acquis en frontend et backend </span> ayant déjà <span>réaliser des projets concrets en PHP, React, Javascript et Nodejs(Express).</span> </p>
         
           <div className="btn-group">
             <a className='voir' href="https://github.com/hugues77" target='blank'><FontAwesomeIcon icon={faGithub} className='icon' /> Voir mon github </a>

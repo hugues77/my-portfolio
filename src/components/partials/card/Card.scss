@@ -49,22 +49,29 @@
         }
         .buttons {
           display: flex;
-          flex-wrap: wrap;
+          // flex-wrap: wrap;
           justify-content: space-between;
-          gap: 20px;
+          // gap: 20px;
 
           a,
           button {
             position: relative;
+            display: flex;
+            align-items: center;
+            width: calc(50% - 5px);
             text-decoration: none;
             color: #0b0b2d;
             font-size: 16px;
             font-weight: 400;
             // background: #fff;
-            padding: 10px 40px;
+            padding: 10px 45px;
             border-radius: 8px;
             z-index: 1;
             transition: 0.5s ease;
+
+            @media screen and (max-width: 768px) {
+              padding: 10px 30px;
+            }
 
             .icon {
               margin-right: 5px;
@@ -115,7 +122,7 @@
     .card-text {
       margin-bottom: 10px;
       p {
-        margin-top: 10px;
+        margin: 10px 5px;
         font-size: 17px;
         text-align: justify;
         overflow: hidden;
@@ -179,6 +186,11 @@
           align-items: center;
           h2 {
             margin-bottom: 5px;
+            text-transform: capitalize;
+
+            @media screen and (max-width: 768px) {
+              // font-size: 22px;
+            }
           }
 
           .icon {
@@ -289,6 +301,9 @@
     &.active {
       background: #1569d4;
       color: #fff;
+    }
+    @media screen and (max-width: 1200px) {
+      margin-top: 10px;
     }
 
     @media screen and (max-width: 768px) {

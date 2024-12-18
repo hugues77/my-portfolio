@@ -3,7 +3,7 @@ import {AnimatePresence} from "motion/react";
 
 function Realisations() {
   return (
-    <div>
+    <div className='realisation'>
       <AnimatePresence>
   
         <Card />

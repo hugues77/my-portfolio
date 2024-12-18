@@ -11,13 +11,19 @@ nav {
   &.active {
     background: #0b0b2d;
   }
-
-  //media pour tablette
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
   @media screen and (max-width: 1200px) {
-    display: none;
+    padding: 15px 20px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 15px 20px;
+    height: 60px;
+    background: #0b0b2d;
+
+    .hide-mobile-menu {
+      right: -285px;
+      transition: all 0.4s ease;
+    }
   }
 
   .logo {
@@ -28,19 +34,167 @@ nav {
     font-size: 25px;
     display: flex;
     align-items: center;
+    cursor: pointer;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 768px) {
+      position: absolute;
+      left: 12px;
+      top: 16px;
+      z-index: 999;
+      // display: none;
+    }
 
     img {
       width: 40px;
       margin-right: 5px;
       border-radius: 50%;
+      @media screen and (max-width: 1200px) {
+        width: 30px;
+      }
     }
   }
 
-  li {
-    list-style: none;
-    display: inline-block;
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 35px;
+  ul {
+    //media pour tablette
+
+    @media screen and (max-width: 768px) {
+      position: fixed;
+      display: block;
+      padding: 10px 20px;
+      width: 285px;
+      height: 100%;
+      bottom: 0;
+      right: 0;
+      top: 0;
+      background: #0b0b2d;
+      color: #fff;
+      padding-top: 20px;
+      z-index: 99;
+      transition: all 0.4s ease;
+    }
+
+    li {
+      position: relative;
+      list-style: none;
+      display: inline-block;
+      font-size: 18px;
+      font-weight: 500;
+      margin-left: 35px;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      z-index: 1;
+
+      @media screen and (max-width: 1200px) {
+        margin-left: 10px;
+        font-size: 15px;
+      }
+
+      @media screen and (max-width: 768px) {
+        // margin-left: 30px;
+        display: block;
+        margin: 25px 40px;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      li:nth-child(1) {
+        margin-top: 60px;
+      }
+    }
+    li::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 30%;
+      padding-bottom: 5px;
+      border-bottom: 3px solid #f2c43d;
+      overflow: hidden;
+      transition: all 0.4s ease;
+      z-index: -1;
+      @media screen and (max-width: 1200px) {
+        width: 0;
+      }
+    }
+    li:hover::before {
+      width: 100%;
+
+      @media screen and (max-width: 1200px) {
+        width: 50%;
+      }
+    }
+    li .active {
+      padding-bottom: 5px;
+      border-bottom: 3px solid #f2c43d;
+    }
+  }
+  .icon-menu {
+    font-size: 30px;
+    position: absolute;
+    right: 12px;
+    top: 14px;
+    cursor: pointer;
+    display: none;
+    z-index: 99;
+
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  .info-rx {
+    display: none;
+    z-index: 99;
+    transition: all 0.4s ease;
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+      align-items: center;
+      position: relative;
+      top: 550px;
+      left: 450px;
+
+      .icon {
+        position: relative;
+        font-size: 18px;
+        color: #fff;
+        border: 2px solid #fff;
+        padding: 10px;
+        border-radius: 50%;
+        margin-left: 12px;
+        cursor: pointer;
+        overflow: hidden;
+        width: 40px;
+        height: 40px;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        transition: all 0.4s ease;
+      }
+      .icon::before {
+        content: "";
+        position: absolute;
+        background: #fff;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 100%;
+        z-index: -1;
+        transition: all 0.5s ease;
+      }
+      .icon:hover::before {
+        width: 100%;
+      }
+      .icon:hover {
+        color: #0b0b2d;
+        border: 2px solid #fff;
+      }
+    }
+    @media screen and (max-width: 576px) {
+      left: 240px;
+    }
   }
 }

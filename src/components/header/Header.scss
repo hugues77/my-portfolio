@@ -27,6 +27,11 @@
     max-width: 600px;
     color: #fff;
 
+    @media screen and (max-width: 1200px) {
+      .main {
+        width: 90%;
+      }
+    }
     @media screen and (max-width: 768px) {
       max-width: 450px;
     }
@@ -49,14 +54,19 @@
       font-size: 35px;
       font-weight: 700;
 
+      @media screen and (max-width: 1200px) {
+        margin-top: 20px;
+        font-size: 30px;
+      }
+
       @media screen and (max-width: 768px) {
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 600;
+        // display: none;
       }
       @media screen and (max-width: 576px) {
-        font-size: 22px;
-        // margin-bottom: 30px;
-        margin-top: -20px;
+        font-size: 20px;
+        padding-top: 40px;
       }
     }
 
@@ -66,10 +76,10 @@
       color: #ff1616;
 
       @media screen and (max-width: 768px) {
-        font-size: 20px;
+        font-size: 22px;
       }
       @media screen and (max-width: 576px) {
-        font-size: 18px;
+        font-size: 22px;
       }
       @media screen and (max-width: 300px) {
         font-size: 16px;
@@ -91,11 +101,15 @@
         font-size: 14px;
       }
       @media screen and (max-width: 576px) {
-        font-size: 12px;
+        font-size: 14px;
+        padding-top: 20px;
+        color: #fff;
+        line-height: 22px;
+        margin-top: -18px;
 
         span {
           background: #0b0b2d;
-          padding: 1px 3px;
+          padding: 1px 5px;
         }
       }
     }
@@ -104,6 +118,10 @@
       justify-content: space-between;
       flex-wrap: wrap;
 
+      @media screen and (max-width: 1200px) {
+      }
+      @media screen and (max-width: 768px) {
+      }
       @media screen and (max-width: 576px) {
         margin-top: 10px;
       }
@@ -113,17 +131,23 @@
 
       a {
         position: relative;
-        width: calc(50% - 5px);
         padding: 12px;
         border-radius: 8px;
         border: 2px solid #fff;
         font-size: 18px;
         font-weight: 600;
+        width: calc(50% - 5px);
         cursor: pointer;
         z-index: 1;
         overflow: hidden;
         transition: all 0.5s ease;
         text-align: center;
+
+        @media screen and (max-width: 1200px) {
+          display: flex;
+          align-items: center;
+          padding: 8px 20px;
+        }
 
         @media screen and (max-width: 768px) {
           font-size: 14px;
@@ -134,9 +158,9 @@
         @media screen and (max-width: 576px) {
           // margin-top: 35px;
           padding: 8px 30px;
-          width: calc(50% - 10px);
           display: flex;
           align-items: center;
+          width: calc(50% - 10px);
           font-size: 12px;
         }
 

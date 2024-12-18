@@ -13,9 +13,9 @@ function Footer() {
 
         </div>
         <div className="info-rx">
-            <div className='icon'><FontAwesomeIcon icon={faLinkedinIn}  /></div>
-            <div className='icon'><FontAwesomeIcon icon={faGithub}  /></div>
-            <div className='icon'><FontAwesomeIcon icon={faWhatsapp}  /></div>
+            <a href="https://www.linkedin.com/in/hugues-eyong-ebun-939b41337/"><div className='icon'><FontAwesomeIcon icon={faLinkedinIn}  /></div></a>
+            <a href="https://github.com/hugues77" target='_blank'><div className='icon'><FontAwesomeIcon icon={faGithub}  /></div></a>
+            <a href="https://wa.me/+33651294692"><div className='icon'><FontAwesomeIcon icon={faWhatsapp}  /></div></a>
 
         </div>
       

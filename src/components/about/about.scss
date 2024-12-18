@@ -20,7 +20,7 @@
     }
     .about-left {
       .bar {
-        margin-top: 20px;
+        margin-top: 23px;
 
         @media screen and (max-width: 768px) {
           margin-top: 27px;
@@ -75,6 +75,9 @@
             &.mysql {
               width: 85%;
             }
+            &.vue {
+              width: 60%;
+            }
           }
         }
       }
@@ -86,7 +89,7 @@
       margin-top: 15px;
       .p_linkedin {
         position: relative;
-        margin-top: 30px;
+        margin-top: 27px;
         background: #1569d4;
         border: 2px solid #1569d4;
         padding: 12px 30px;
