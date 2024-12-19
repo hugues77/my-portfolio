@@ -4,7 +4,7 @@
         "urlImage":"http://localhost:5173/src/assets/card/booki_projet_2.jpg",
         "categ":"HTML & CSS",
         "title": "site d'une agence de voyage Booki",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sit animi id repellendus. Voluptatibus dolorem deleniti sit, totam ad adipisci sequi laudantium incidunt tempore dolores ipsa nemo quod architecto asperiores!",
+        "description": "Booki, c'est un projet développé en HTML et CSS dans l'objectif de présenter des offres des voyages pour des clients, il est question de mettre en avant les techniques du flexbox et d'intégrer l'interface responsive de la page en respectant la maquette figma ",
         "urlGithub":"https://github.com/hugues77/booki",
         "urlImagePreview":"http://localhost:5173/src/assets/card/preview/booki_projet_2.png"
     },
@@ -13,7 +13,7 @@
         "urlImage":"http://localhost:5173/src/assets/card/secours_projet_php.jpg",
         "categ":"php",
         "title": "site d'une association à metz avec gestion des membres ",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sit animi id repellendus. Voluptatibus dolorem deleniti sit, totam ad adipisci sequi laudantium incidunt tempore dolores ipsa nemo quod architecto asperiores!",
+        "description": "C'est le projet complet d'une association développé en PHP et CSS, le site présente l'ensemble des activités et permettent aux membres de se connecter , soit de créer leur compte utilisateur, nous intégrons également l' API de youtube en vue d'afficher toutes les vidéos de la chaine youtube de l'association",
         "urlGithub":"https://github.com/hugues77/secours_de_leternel",
         "urlImagePreview":"http://localhost:5173/src/assets/card/preview/secours_projet_php.png"
     },
@@ -22,7 +22,7 @@
         "urlImage":"http://localhost:5173/src/assets/card/kasa_projet_5.jpg",
         "categ":"react",
         "title": "Projet de location immobilière kasa",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sit animi id repellendus. Voluptatibus dolorem deleniti sit, totam ad adipisci sequi laudantium incidunt tempore dolores ipsa nemo quod architecto asperiores!",
+        "description": "Kasa, c'est une application web de location immobilière créer en React et SASS dans un seul souci d'ameliorer l'expérience utilisateur moderne et reactive lors de la présentation des offres de location, tout en mettant en avant la gestion des routes et la logique des composants.",
         "urlGithub":"https://github.com/hugues77/Location-immo-avec-React",
         "urlImagePreview":"http://localhost:5173/src/assets/card/preview/kasa_projet_5.png"
     },
@@ -31,7 +31,7 @@
         "urlImage":"http://localhost:5173/src/assets/card/portfolio_projet_8.jpg",
         "categ":"react",
         "title": "Projet portfolio de Hugues Eyong",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sit animi id repellendus. Voluptatibus dolorem deleniti sit, totam ad adipisci sequi laudantium incidunt tempore dolores ipsa nemo quod architecto asperiores!",
+        "description": "C'est mon portfolio développeur developpé en React, Sass tout en faisant un tour des trois autres bibliothèques react dans le but de vous présenter mon parcours, mes compétences acquises au cours de cette formation et les differents projets réalisés de manière professionnelle.",
         "urlGithub":"https://github.com/hugues77/my-portfolio",
         "urlImagePreview":"http://localhost:5173/src/assets/card/preview/portfolio_projet_8.png"
     },
@@ -40,7 +40,7 @@
         "urlImage":"http://localhost:5173/src/assets/card/sophie_projet_3.jpg",
         "categ":"javascript",
         "title": "Création d'un site dynamique pour un architecte",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sit animi id repellendus. Voluptatibus dolorem deleniti sit, totam ad adipisci sequi laudantium incidunt tempore dolores ipsa nemo quod architecto asperiores!",
+        "description": "Le projet Sophie Bluel, se resume sur la création d'une page web dynamique en JavaScript tout en communiquant avec une API. Le front-end consistait de donner les moyens à l'architecte de publier tous ses traveaux et les sauvegarder dans l'API, les modifier et en meme temps les supprimer si bésoin.",
         "urlGithub":"https://github.com/hugues77/Architecte-sophie-bluel",
         "urlImagePreview":"http://localhost:5173/src/assets/card/preview/sophie_projet_3.png"
     },
@@ -49,7 +49,7 @@
         "urlImage":"http://localhost:5173/src/assets/card/nina_projet_4.jpg",
         "categ":"seo",
         "title": "Amélioration et  optimisation du site d'un photographe",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sit animi id repellendus. Voluptatibus dolorem deleniti sit, totam ad adipisci sequi laudantium incidunt tempore dolores ipsa nemo quod architecto asperiores!",
+        "description": "Il était question de venir en aide pour le site de Nina, Identifier les differents problèmes et proposer des solutions c'est-à-dire améliorer  la performance du site et son accessibilité, tout en optimisant le référencement (SEO), aussi corriger quelques bugs liés au bon fonctionnement du projet.",
         "urlGithub":"https://github.com/hugues77/projet4optimisation-seo",
         "urlImagePreview":"http://localhost:5173/src/assets/card/preview/nina_projet_4.png"
     },
@@ -58,7 +58,7 @@
         "urlImage":"http://localhost:5173/src/assets/card/vGrimoire_projet_6.jpg",
         "categ":"Nodejs",
         "title": "Site de notation des livres",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sit animi id repellendus. Voluptatibus dolorem deleniti sit, totam ad adipisci sequi laudantium incidunt tempore dolores ipsa nemo quod architecto asperiores!",
+        "description": "C'est le projet qui m'a permis de développer le back-end d'un site de notation de livres, il s'agit de créer un serveur avec Express et de le connecter à une base de données MongoDB en vue de permettre aux utilisateurs d'effectuer le CRUD au sein de cette application, sans négliger la gestion des image et le JWT ",
         "urlGithub":"https://github.com/hugues77/backend_notation_livres",
         "urlImagePreview":"http://localhost:5173/src/assets/card/preview/vGrimoire_projet_6.png"
     }

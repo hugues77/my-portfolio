@@ -113,7 +113,7 @@ const filterItems = (categ) =>{
                             </div>
                         </div>
                         <div className="card-text">
-                            <p>{res.description.substring(0, 250)} </p>
+                            <p>{res.description.substring(0, 260)}... </p>
                             <div className='categ'><FontAwesomeIcon icon={faCode} /> {res.categ.toUpperCase()}</div>
                                 
                         </div>
