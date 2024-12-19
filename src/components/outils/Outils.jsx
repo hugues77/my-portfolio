@@ -1,4 +1,4 @@
-import './outils.scss'
+import './Outils.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBootstrap, faCss3, faDocker, faHtml5, faJsSquare,  faPhp, faReact, faSass } from '@fortawesome/free-brands-svg-icons'
 import { faNode } from '@fortawesome/free-brands-svg-icons/faNode'
